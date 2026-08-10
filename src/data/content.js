@@ -97,9 +97,8 @@ export const PROJECTS = [
 
 export const LAB = [
   ['Century Cinema Cafe', 'https://centurycinemacafe.vercel.app', 'HTML / CSS'],
-  ['Analytics Dashboard', 'https://my-dashboard-seven-zeta.vercel.app', 'Dashboard'],
+  ['Analytics Dashboard', 'https://my-world-dashboard.vercel.app', 'Dashboard'],
   ['Movie Watchlist', 'https://movie-watclist.vercel.app', 'API / JS'],
-  ['War Jack — card game', 'https://war-jack.vercel.app', 'Game logic'],
   ['Color Scheme Generator', 'https://color-scheme-generator-omega.vercel.app', 'API / JS'],
   ['Restaurant Ordering App', 'https://resturant-ordering-app-eight.vercel.app', 'Cart / State'],
   ['Twimba', 'https://twimba-iota.vercel.app', 'DOM / JS'],
@@ -107,9 +106,9 @@ export const LAB = [
   ['Learning Journal', 'https://learning-journal-six.vercel.app', 'Blog UI'],
   ['Meme Picker', 'https://meme-picker-tau.vercel.app', 'API / JS'],
   ['Oldagram', 'https://oldagram-two.vercel.app', 'DOM / JS'],
-  ['URL Tracker', 'https://url-tracker-chi.vercel.app', 'Storage'],
+  ['URL Tracker', 'https://url-tracker-app.vercel.app', 'Storage'],
   ['Basketball Tracker', 'https://basketball-dashboard-tracker.vercel.app', 'State'],
-  ['Password Generator', 'https://password-generator-eight-silk.vercel.app', 'JS'],
+  ['Password Generator', 'https://password-generator-nine-delta-74.vercel.app', 'JS'],
   ['Unit Converter', 'https://unit-converter-five-sigma.vercel.app', 'JS'],
   ['Splash Page', 'https://splash-page-peach-delta.vercel.app', 'CSS'],
   ['Home Town Page', 'https://home-town-home-page.vercel.app', 'CSS'],
