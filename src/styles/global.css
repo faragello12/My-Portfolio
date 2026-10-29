@@ -343,16 +343,31 @@ html[dir="rtl"] .hero__scroll{right:auto;left:var(--pad)}
 .f:not(.is-on):hover{color:var(--ink)}
 
 /* ═══════════ PROJECT CARDS ═══════════ */
-.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2vw,30px)}
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2vw,30px)}
 .pcard{
-  grid-column:span 6;position:relative;border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;
+  display:flex;flex-direction:column;position:relative;border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;
   background:var(--bg-2);
   transition:border-color .5s;
 }
 .pcard.is-hidden{display:none}
-.pcard--wide{grid-column:span 12}
 .pcard:hover{border-color:rgba(232,180,74,.28)}
-@media(max-width:900px){.pcard,.pcard--wide{grid-column:span 12}}
+
+/* featured: frame on one side, copy on the other — same frame ratio as every
+   other card, so the screenshot is never cropped harder than its neighbours */
+.pcard--feature{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+.pcard--feature .pcard__stage{display:flex;flex-direction:column;justify-content:flex-end;padding-inline-end:0}
+.pcard--feature .pcard__meta{flex-direction:column;flex-wrap:nowrap;align-items:flex-start;justify-content:center;gap:28px;padding:clamp(28px,3.4vw,58px)}
+.pcard--feature .pcard__left{flex:none}
+.pcard--feature .pcard__go{align-self:flex-start}
+.pcard--feature .pcard__title{font-size:clamp(26px,3vw,44px)}
+@media(max-width:900px){
+  .projects{grid-template-columns:minmax(0,1fr)}
+  .pcard--feature{display:flex}
+  .pcard--feature .pcard__stage{padding-inline-end:clamp(18px,2.4vw,38px)}
+  .pcard--feature .pcard__meta{flex-direction:row;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;padding:clamp(20px,2.4vw,34px)}
+  .pcard--feature .pcard__left{flex:1}
+  .pcard--feature .pcard__go{align-self:auto}
+}
 
 .pcard__glow{
   position:absolute;inset:0;opacity:0;transition:opacity .6s;pointer-events:none;
@@ -377,7 +392,6 @@ html[dir="rtl"] .hero__scroll{right:auto;left:var(--pad)}
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:ltr;text-align:left;
 }
 .brw__body{position:relative;aspect-ratio:16/9.6;overflow:hidden;background:var(--sb,#0f0f14);color:var(--si,#fff)}
-.pcard--wide .brw__body{aspect-ratio:16/6.6}
 
 /* shimmer sweep across mockup */
 .brw__body::after{
@@ -488,9 +502,10 @@ html[dir="rtl"] .mk__play{right:auto;left:7%}
   100%{transform:translate(-18px,-22px) scale(1)}
 }
 
-/* card meta */
-.pcard__meta{padding:clamp(20px,2.4vw,34px);display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between}
-.pcard__left{min-width:min(100%,260px);flex:1}
+/* card meta — fills the card, so in a row of two every title starts on the
+   same line and every button sits on the same baseline */
+.pcard__meta{flex:1;padding:clamp(20px,2.4vw,34px);display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between}
+.pcard__left{min-width:min(100%,260px);flex:1;align-self:flex-start}
 .pcard__tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px}
 .tag{font-family:var(--ff-m);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:100px;border:1px solid var(--line);color:var(--ink-3)}
 .tag--gold{border-color:rgba(232,180,74,.35);color:var(--gold);background:rgba(232,180,74,.07)}

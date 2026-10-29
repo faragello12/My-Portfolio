@@ -11,7 +11,7 @@ import { PROJECTS, FILTERS, T } from '../data/content';
 const EASE = [0.22, 1, 0.36, 1];
 
 /* forwardRef because AnimatePresence mode="popLayout" measures the child node */
-const ProjectCard = forwardRef(function ProjectCard({ p }, fwd) {
+const ProjectCard = forwardRef(function ProjectCard({ p, featured }, fwd) {
   const { t } = useLang();
   const [shotFailed, setShotFailed] = useState(false);
   const card = useRef(null);
@@ -37,7 +37,7 @@ const ProjectCard = forwardRef(function ProjectCard({ p }, fwd) {
       layout
       ref={setRefs}
       onPointerMove={onMove}
-      className={`pcard${p.wide ? ' pcard--wide' : ''}${seen ? ' is-in' : ''}`}
+      className={`pcard${featured ? ' pcard--feature' : ''}${seen ? ' is-in' : ''}`}
       initial={{ opacity: 0, y: 34, scale: 0.985 }}
       animate={seen ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 34, scale: 0.985 }}
       exit={{ opacity: 0, scale: 0.97 }}
@@ -130,7 +130,11 @@ export default function Work() {
 
       <motion.div className="projects" layout>
         <AnimatePresence mode="popLayout">
-          {shown.map(p => <ProjectCard key={p.id} p={p} />)}
+          {/* the grid runs in pairs — an odd count features the first card full
+              width, so no filter ever leaves a card alone on the last row */}
+          {shown.map((p, i) => (
+            <ProjectCard key={p.id} p={p} featured={i === 0 && shown.length % 2 === 1} />
+          ))}
         </AnimatePresence>
       </motion.div>
     </section>
