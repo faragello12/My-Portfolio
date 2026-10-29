@@ -4,7 +4,7 @@ Bilingual (EN / AR) portfolio for a frontend developer working in e-commerce.
 Vite + React 18, with a hand-written WebGL hero, GSAP-driven marquees and Lenis
 smooth scroll.
 
-**Live:** https://mohamed-farag.vercel.app
+**Live:** https://mohamedfarag.vercel.app
 
 بورتفوليو محمد فرج — نسخة React، بلغتين إنجليزي وعربي، مع خلفية WebGL مكتوبة
 بالإيد و سكرول ناعم.
@@ -61,7 +61,9 @@ a component.
 
 **A project** — add an object to `PROJECTS` and drop a homepage screenshot at
 `public/assets/work/<id>.jpg`. The card, browser frame, filter and the CSS
-mockup fallback all follow from the `id`.
+mockup fallback all follow from the `id`. Cards run in pairs; whenever the
+visible count is odd, the first one is featured full width, so no filter leaves
+a card alone on the last row.
 
 **A certificate** — drop the image in `public/assets/certs/` and add a row to
 `CERTS`. The section removes itself entirely while that array is empty.
@@ -117,5 +119,5 @@ three need to agree:
 3. `public/sitemap.xml` — `<loc>` and both `hreflang` links
 
 ```bash
-grep -rn "mohamed-farag.vercel.app" index.html public/
+grep -rn "mohamedfarag.vercel.app" index.html public/
 ```

@@ -6,7 +6,7 @@
 export const PROJECTS = [
   {
     id: 'ella', name: 'Ella Jewellery', url: 'https://ella-eg.com/',
-    cat: 'shopify', wide: true, mock: 'shop',
+    cat: 'shopify', mock: 'shop',
     logo: 'ELLA', kicker: '18K gold plated · Egypt',
     h1: 'Wear the', h2: 'light',
     cta: 'Discover', shapes: ['hoop', 'neck', 'ring', 'bar'],
@@ -71,7 +71,7 @@ export const PROJECTS = [
   },
   {
     id: 'limitless', name: 'Limitless Agency', url: 'https://limitless-marketing-agency.vercel.app/',
-    cat: 'code', wide: true, mock: 'agency',
+    cat: 'code', mock: 'agency',
     logo: 'LIMITLESS', kicker: 'Cinematic agency',
     h1: 'Stories that', h2: 'do not fade',
     theme: { bg: '#08080b', ink: '#f4f1ea', accent: '#e8b44a', line: 'rgba(255,255,255,.08)' },
