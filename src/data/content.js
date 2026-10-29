@@ -5,9 +5,9 @@
 
 export const PROJECTS = [
   {
-    id: 'ochuu', name: 'Ochuu Jewellery', url: 'https://ochuujewellery.com/',
+    id: 'ella', name: 'Ella Jewellery', url: 'https://ella-eg.com/',
     cat: 'shopify', wide: true, mock: 'shop',
-    logo: 'OCHUU', kicker: 'Gold plated · Egypt',
+    logo: 'ELLA', kicker: 'Gold plated · Egypt',
     h1: 'Made for', h2: 'everyday',
     cta: 'Shop now', shapes: ['hoop', 'neck', 'ring', 'bar'],
     theme: { bg: '#f7f2ea', ink: '#1d1811', accent: '#a8843c', prod: 'rgba(29,24,17,.055)', hero: '#efe6d8', line: 'rgba(29,24,17,.09)', btnInk: '#fff' },
@@ -44,16 +44,16 @@ export const PROJECTS = [
     },
   },
   {
-    id: 'so3ody', name: 'So3ody Store', url: 'https://so3odystore.com/',
+    id: 'gmj', name: 'GMJ', url: 'https://gmj-eg.com/',
     cat: 'shopify', mock: 'shop',
-    logo: 'SO3ODY', kicker: 'Crafted for elegance',
-    h1: 'Luxury you', h2: 'can feel',
-    cta: 'Shop bags', shapes: ['bag', 'shoe', 'bag', 'shoe'],
-    theme: { bg: '#0e0e0f', ink: '#f2f2f2', accent: '#e6e6e6', prod: 'rgba(255,255,255,.05)', hero: '#161617', line: 'rgba(255,255,255,.09)', btnInk: '#0e0e0f' },
-    tags: ['Shopify', 'Liquid', 'Dark UI', 'Promo logic'],
+    logo: 'GMJ', kicker: 'Online store · Egypt',
+    h1: 'Shop the', h2: 'collection',
+    cta: 'Shop now', shapes: ['bag', 'ring', 'shoe', 'neck'],
+    theme: { bg: '#0e0e0f', ink: '#f2f2f2', accent: '#e8b44a', prod: 'rgba(255,255,255,.05)', hero: '#161617', line: 'rgba(255,255,255,.09)', btnInk: '#0e0e0f' },
+    tags: ['Shopify', 'Liquid', 'Custom theme'],
     desc: {
-      en: 'Premium bags, shoes and sneakers on a dark storefront — bestsellers, new arrivals and a timed promotion bar wired into the theme.',
-      ar: 'شنط وأحذية وسنيكرز على متجر بثيم غامق — الأكثر مبيعاً، الوصل حديثاً، وبار عروض مؤقتة مربوط بالثيم.',
+      en: 'A full Shopify storefront for an Egyptian brand — custom Liquid theme, clear collection pages, and a mobile-first path from the homepage to checkout.',
+      ar: 'متجر شوبيفاي كامل لبراند مصري — ثيم Liquid مخصص، صفحات كوليكشن واضحة، وطريق سهل على الموبايل من الهوم لحد الدفع.',
     },
   },
   {
@@ -87,10 +87,10 @@ export const PROJECTS = [
     logo: 'LIMITED', kicker: 'Production house',
     h1: 'Frame by', h2: 'frame',
     theme: { bg: '#0a0a0d', ink: '#f0eee8', accent: '#d6c39a', line: 'rgba(255,255,255,.08)' },
-    tags: ['TypeScript', 'React', 'Vercel'],
+    tags: ['React', 'JavaScript', 'Vercel'],
     desc: {
-      en: 'A production-house site in TypeScript and React. Type-safe components, a reel-first layout, and transitions that carry the film feel across pages.',
-      ar: 'موقع شركة إنتاج بـ TypeScript و React. كومبوننتس آمنة، لاي أوت الريل هو البطل، وترانزيشنز بتنقل الإحساس السينمائي بين الصفحات.',
+      en: 'A production-house site in React. Reusable components, a reel-first layout, and transitions that carry the film feel across pages.',
+      ar: 'موقع شركة إنتاج بـ React. كومبوننتس بتتعاد في كل الصفحات، لاي أوت الريل هو البطل، وترانزيشنز بتنقل الإحساس السينمائي بين الصفحات.',
     },
   },
 ];
@@ -160,7 +160,7 @@ export const SERVICES = [
   },
   {
     art: 'code',
-    title: { en: 'React & Next.js apps', ar: 'تطبيقات رياكت' },
+    title: { en: 'React apps', ar: 'تطبيقات رياكت' },
     body: {
       en: 'Sites, dashboards and internal tools built from zero — clean components, real animation, and performance that holds up.',
       ar: 'مواقع و داشبوردات مبنية من الصفر — كومبوننتس نضيفة، أنيميشن، وأداء عالي.',
@@ -225,7 +225,7 @@ export const STATS = [
 export const SKILLS = [
   {
     head: { en: 'CODE', ar: 'البرمجة' },
-    items: ['React', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Liquid', 'HTML5 / CSS3', 'Tailwind', 'SCSS'],
+    items: ['React', 'JavaScript (ES6+)', 'Liquid', 'HTML5 / CSS3', 'Tailwind', 'SCSS'],
   },
   {
     head: { en: 'COMMERCE', ar: 'التجارة الإلكترونية' },
@@ -252,7 +252,7 @@ export const FILTERS = [
   { id: 'wordpress', label: { en: 'WordPress', ar: 'ووردبريس' } },
 ];
 
-export const ROTOR = ['Shopify', 'React', 'Next.js', 'Liquid', 'TypeScript', 'WooCommerce', 'GSAP', 'Tailwind'];
+export const ROTOR = ['Shopify', 'React', 'JavaScript', 'Liquid', 'WooCommerce', 'GSAP', 'Tailwind'];
 
 /* UI copy */
 export const T = {

@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const BRANDS = ['Ochuu Jewellery', "Zeezee's Accessories", 'Stella', 'So3ody Store', 'TNH Jewelry', 'Limitless Agency', 'Limited Media Production'];
-const STACK = ['Shopify', 'React', 'Next.js', 'Liquid', 'TypeScript', 'WordPress', 'Tailwind', 'Vercel'];
+const BRANDS = ['Ella Jewellery', "Zeezee's Accessories", 'Stella', 'GMJ', 'TNH Jewelry', 'Limitless Agency', 'Limited Media Production'];
+const STACK = ['Shopify', 'React', 'JavaScript', 'Liquid', 'WooCommerce', 'WordPress', 'Tailwind', 'Vercel'];
 
 /**
  * Belt speed rises with scroll velocity then eases back — in the vanilla build
