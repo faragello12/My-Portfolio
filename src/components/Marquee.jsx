@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const BRANDS = ['Ella Jewellery', "Zeezee's Accessories", 'Stella', 'GMJ', 'TNH Jewelry', 'Limitless Agency', 'Limited Media Production'];
+const BRANDS = ['Ella Jewellery', "Zeezee's Accessories", 'Stella', 'G.M.J', 'TNH Jewelry', 'Limitless Agency', 'Limited Media Production'];
 const STACK = ['Shopify', 'React', 'JavaScript', 'Liquid', 'WooCommerce', 'WordPress', 'Tailwind', 'Vercel'];
 
 /**
