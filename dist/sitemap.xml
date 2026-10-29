@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mohamed-farag.vercel.app/</loc>
+    <loc>https://mohamedfarag.vercel.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://mohamed-farag.vercel.app/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://mohamed-farag.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mohamedfarag.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mohamedfarag.vercel.app/" />
   </url>
 </urlset>
