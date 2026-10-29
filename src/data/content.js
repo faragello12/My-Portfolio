@@ -5,16 +5,16 @@
 
 export const PROJECTS = [
   {
-    id: 'ochuu', name: 'Ochuu Jewellery', url: 'https://ochuujewellery.com/',
+    id: 'ella', name: 'Ella Jewellery', url: 'https://ella-eg.com/',
     cat: 'shopify', wide: true, mock: 'shop',
-    logo: 'OCHUU', kicker: 'Gold plated · Egypt',
-    h1: 'Made for', h2: 'everyday',
-    cta: 'Shop now', shapes: ['hoop', 'neck', 'ring', 'bar'],
+    logo: 'ELLA', kicker: '18K gold plated · Egypt',
+    h1: 'Wear the', h2: 'light',
+    cta: 'Discover', shapes: ['hoop', 'neck', 'ring', 'bar'],
     theme: { bg: '#f7f2ea', ink: '#1d1811', accent: '#a8843c', prod: 'rgba(29,24,17,.055)', hero: '#efe6d8', line: 'rgba(29,24,17,.09)', btnInk: '#fff' },
-    tags: ['Shopify', 'Liquid', 'Custom theme', 'CRO'],
+    tags: ['Shopify', 'Liquid', 'Custom theme', 'Shop the look'],
     desc: {
-      en: 'A full gold-plated jewellery storefront — six collections, custom Liquid theme, and a product page rebuilt around the buy button.',
-      ar: 'متجر مجوهرات مطلية بالذهب بالكامل — ست كوليكشنز، ثيم Liquid مخصص، وصفحة منتج مبنية حوالين زرار الشراء.',
+      en: 'An 18K gold-plated jewellery store on a custom Liquid theme — a hero slider, a shop-the-look section with tappable hotspots, and WhatsApp one tap away on every page.',
+      ar: 'متجر مجوهرات مطلية دهب عيار 18 على ثيم Liquid مخصص — سلايدر في الهيرو، سكشن "شوف اللوك" بنقط تضغط عليها تكتشف كل قطعة، وواتساب على بعد ضغطة من أي صفحة.',
     },
   },
   {
@@ -44,16 +44,16 @@ export const PROJECTS = [
     },
   },
   {
-    id: 'so3ody', name: 'So3ody Store', url: 'https://so3odystore.com/',
+    id: 'gmj', name: 'G.M.J', url: 'https://gmj-eg.com/',
     cat: 'shopify', mock: 'shop',
-    logo: 'SO3ODY', kicker: 'Crafted for elegance',
-    h1: 'Luxury you', h2: 'can feel',
-    cta: 'Shop bags', shapes: ['bag', 'shoe', 'bag', 'shoe'],
-    theme: { bg: '#0e0e0f', ink: '#f2f2f2', accent: '#e6e6e6', prod: 'rgba(255,255,255,.05)', hero: '#161617', line: 'rgba(255,255,255,.09)', btnInk: '#0e0e0f' },
-    tags: ['Shopify', 'Liquid', 'Dark UI', 'Promo logic'],
+    logo: 'G.M.J', kicker: 'The Pharaoh Collection',
+    h1: 'Wear the', h2: 'civilization',
+    cta: 'Shop', shapes: ['neck', 'stone', 'ring', 'hoop'],
+    theme: { bg: '#0d1330', ink: '#f1e9d8', accent: '#d4ad5a', prod: 'rgba(241,233,216,.05)', hero: '#121a3d', line: 'rgba(241,233,216,.1)', btnInk: '#0d1330' },
+    tags: ['Shopify', 'Liquid', 'Custom theme', 'EN / AR'],
     desc: {
-      en: 'Premium bags, shoes and sneakers on a dark storefront — bestsellers, new arrivals and a timed promotion bar wired into the theme.',
-      ar: 'شنط وأحذية وسنيكرز على متجر بثيم غامق — الأكثر مبيعاً، الوصل حديثاً، وبار عروض مؤقتة مربوط بالثيم.',
+      en: 'Egyptian-inspired jewellery sold inside the Grand Egyptian Museum and NMEC. A custom Liquid theme built like a museum — every collection a chamber, every piece an object card, in English and Arabic.',
+      ar: 'مجوهرات مستوحاة من الحضارة المصرية بتتباع جوه المتحف المصري الكبير ومتحف الحضارة. ثيم Liquid مخصص معمول زي المتحف — كل كوليكشن قاعة، وكل قطعة ليها كارت زي القطع الأثرية، بالعربي والإنجليزي.',
     },
   },
   {
@@ -87,10 +87,10 @@ export const PROJECTS = [
     logo: 'LIMITED', kicker: 'Production house',
     h1: 'Frame by', h2: 'frame',
     theme: { bg: '#0a0a0d', ink: '#f0eee8', accent: '#d6c39a', line: 'rgba(255,255,255,.08)' },
-    tags: ['TypeScript', 'React', 'Vercel'],
+    tags: ['React', 'JavaScript', 'Vercel'],
     desc: {
-      en: 'A production-house site in TypeScript and React. Type-safe components, a reel-first layout, and transitions that carry the film feel across pages.',
-      ar: 'موقع شركة إنتاج بـ TypeScript و React. كومبوننتس آمنة، لاي أوت الريل هو البطل، وترانزيشنز بتنقل الإحساس السينمائي بين الصفحات.',
+      en: 'A production-house site in React. Reusable components, a reel-first layout, and transitions that carry the film feel across pages.',
+      ar: 'موقع شركة إنتاج بـ React. كومبوننتس بتتعاد في كل الصفحات، لاي أوت الريل هو البطل، وترانزيشنز بتنقل الإحساس السينمائي بين الصفحات.',
     },
   },
 ];
@@ -160,7 +160,7 @@ export const SERVICES = [
   },
   {
     art: 'code',
-    title: { en: 'React & Next.js apps', ar: 'تطبيقات رياكت' },
+    title: { en: 'React apps', ar: 'تطبيقات رياكت' },
     body: {
       en: 'Sites, dashboards and internal tools built from zero — clean components, real animation, and performance that holds up.',
       ar: 'مواقع و داشبوردات مبنية من الصفر — كومبوننتس نضيفة، أنيميشن، وأداء عالي.',
@@ -225,7 +225,7 @@ export const STATS = [
 export const SKILLS = [
   {
     head: { en: 'CODE', ar: 'البرمجة' },
-    items: ['React', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Liquid', 'HTML5 / CSS3', 'Tailwind', 'SCSS'],
+    items: ['React', 'JavaScript (ES6+)', 'Liquid', 'HTML5 / CSS3', 'Tailwind', 'SCSS'],
   },
   {
     head: { en: 'COMMERCE', ar: 'التجارة الإلكترونية' },
@@ -252,7 +252,7 @@ export const FILTERS = [
   { id: 'wordpress', label: { en: 'WordPress', ar: 'ووردبريس' } },
 ];
 
-export const ROTOR = ['Shopify', 'React', 'Next.js', 'Liquid', 'TypeScript', 'WooCommerce', 'GSAP', 'Tailwind'];
+export const ROTOR = ['Shopify', 'React', 'JavaScript', 'Liquid', 'WooCommerce', 'GSAP', 'Tailwind'];
 
 /* UI copy */
 export const T = {
